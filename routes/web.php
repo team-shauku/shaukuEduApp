@@ -1,6 +1,7 @@
 <?php
-// use Auth;
+// use Auth;php
 use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\Auth;
 
 /*
 |--------------------------------------------------------------------------
@@ -23,7 +24,8 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 
 
 
-Route::get('/create_course', [App\Http\Controllers\CourseController::class, 'index']); 
+Route::get('/create_course', [App\Http\Controllers\CourseController::class, 'index']);
 
-Route::get('/enroll_course', [App\Http\Controllers\EnrollCourseController::class, 'index']);
+Route::get('/upload-course', [App\Http\Controllers\CourseController::class, 'createForm']);
 
+Route::post('/upload-course', [App\Http\Controllers\CourseController::class, 'courseUpload'])->name('courseUpload');
