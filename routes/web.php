@@ -23,5 +23,7 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 
 
 
-Route::get('/create_course', [App\Http\Controllers\CourseController::class, 'index']);
+Route::get('/create_course', [App\Http\Controllers\CourseController::class, 'index']); 
+
+Route::get('/enroll_course', [App\Http\Controllers\EnrollCourseController::class, 'index']);
 
