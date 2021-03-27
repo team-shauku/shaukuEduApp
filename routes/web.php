@@ -29,3 +29,4 @@ Route::get('/create_course', [App\Http\Controllers\CourseController::class, 'ind
 Route::get('/upload-course', [App\Http\Controllers\CourseController::class, 'createForm']);
 
 Route::post('/upload-course', [App\Http\Controllers\CourseController::class, 'courseUpload'])->name('courseUpload');
+Route::get('/teacher', [App\Http\Controllers\TeacherController::class, 'index']);
