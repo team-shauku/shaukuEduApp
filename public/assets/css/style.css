@@ -97,7 +97,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #header .logo a span {
-  color: #e03a3c;
+  color: #f87fda;
 }
 
 #header .logo img {
@@ -109,7 +109,7 @@ h1, h2, h3, h4, h5, h6 {
 --------------------------------------------------------------*/
 .get-started-btn {
   margin-left: 30px;
-  background: purple;
+  background: #800080;
   color: #fff;
   border-radius: 4px;
   padding: 8px 25px;
@@ -174,7 +174,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .navbar a:hover, .navbar .active, .navbar li:hover > a {
-  color: #e03a3c;
+  color: #ee41b4;
 }
 
 .navbar .dropdown ul {
@@ -345,7 +345,7 @@ h1, h2, h3, h4, h5, h6 {
 #hero {
   width: 100%;
   height: 100vh;
-  background: url("../img/hero-bg.jpg") top center no-repeat;
+  background: url("../img/hero-bg.png") top center no-repeat;
   background-size: cover;
   position: relative;
   padding-top: 82px;
