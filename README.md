@@ -1,4 +1,10 @@
 <<<<<<< HEAD
+# shaukuEduApp
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 023446a6837b3875ecd7d4077bdea61cb9ee85b9
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
 
 <p align="center">
@@ -61,6 +67,10 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+<<<<<<< HEAD
 =======
 # shaukuEduApp
 >>>>>>> 30c2dffb0051d329b39a22324a0d14597746b1d0
+=======
+>>>>>>> 023446a6837b3875ecd7d4077bdea61cb9ee85b9
+>>>>>>> d3088b73aa40156849df3ca945ce8535c9b7b072
