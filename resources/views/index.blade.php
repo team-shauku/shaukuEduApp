@@ -55,7 +55,7 @@
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
 
-      <a href="#about" class="get-started-btn scrollto">Get Started</a>
+      <a href="{{ route('login') }}" class="get-started-btn scrollto">Login</a>
     </div>
   </header>
   <!-- End Header -->
@@ -68,7 +68,7 @@
         <div class="col-xl-6">
           <h1>Bringing Educators close to You</h1>
           <h2>We are team of students whose aim is to bring Education closer to home for Africans</h2>
-          <a href="#about" class="btn-get-started scrollto">Get Started</a>
+          <a href="{{ route('register') }}" class="btn-get-started scrollto">Get Started</a>
         </div>
       </div>
     </div>
