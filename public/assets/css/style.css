@@ -14,7 +14,7 @@ body {
 }
 
 a {
-  color: #e03a3c;
+  color: #C8A2C8;
   text-decoration: none;
 }
 
@@ -37,7 +37,7 @@ h1, h2, h3, h4, h5, h6 {
   right: 15px;
   bottom: 15px;
   z-index: 996;
-  background: #e03a3c;
+  background: #C8A2C8;
   width: 40px;
   height: 40px;
   border-radius: 4px;
@@ -51,7 +51,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .back-to-top:hover {
-  background: #e65d5f;
+  background: #c016c0;
   color: #fff;
 }
 
@@ -623,55 +623,7 @@ section {
   }
 }
 
-/*--------------------------------------------------------------
-# Counts
---------------------------------------------------------------*/
-.counts {
-  padding-top: 80px;
-}
 
-.counts .count-box {
-  padding: 30px 30px 25px 30px;
-  width: 100%;
-  position: relative;
-  text-align: center;
-  box-shadow: 0px 2px 35px rgba(0, 0, 0, 0.06);
-  border-radius: 4px;
-}
-
-.counts .count-box i {
-  position: absolute;
-  width: 54px;
-  height: 54px;
-  top: -27px;
-  left: 50%;
-  transform: translateX(-50%);
-  font-size: 24px;
-  background: #fff;
-  color: #e03a3c;
-  border-radius: 50px;
-  border: 2px solid #fff;
-  box-shadow: 0px 2px 25px rgba(0, 0, 0, 0.1);
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.counts .count-box span {
-  font-size: 36px;
-  display: block;
-  font-weight: 700;
-  color: #111111;
-}
-
-.counts .count-box p {
-  padding: 0;
-  margin: 0;
-  font-family: "Raleway", sans-serif;
-  font-size: 14px;
-}
-
-/*--------------------------------------------------------------
 # Tabs
 --------------------------------------------------------------*/
 .tabs .nav-tabs {
@@ -1171,7 +1123,7 @@ section {
 .faq .faq-list a {
   display: block;
   position: relative;
-  font-family: #e03a3c;
+  font-family: #dd7070;
   font-size: 18px;
   line-height: 24px;
   font-weight: 400;
@@ -1242,7 +1194,7 @@ section {
 
 .team .member .social a {
   transition: color 0.3s;
-  color: #111111;
+  color: #6b264b;
   margin: 0 3px;
   border-radius: 50px;
   width: 36px;
@@ -1256,7 +1208,7 @@ section {
 }
 
 .team .member .social a:hover {
-  background: #111111;
+  background: #6b264b;
 }
 
 .team .member .social i {
@@ -1272,7 +1224,7 @@ section {
   font-weight: 700;
   margin-bottom: 5px;
   font-size: 18px;
-  color: #111111;
+  color: #6b264b;
 }
 
 .team .member .member-info span {
@@ -1298,7 +1250,7 @@ section {
 # Contact
 --------------------------------------------------------------*/
 .contact .info-box {
-  color: #444444;
+  color: #C8A2C8;
   text-align: center;
   box-shadow: 0 0 30px rgba(214, 215, 216, 0.6);
   padding: 30px 0 32px 0;
@@ -1307,7 +1259,7 @@ section {
 
 .contact .info-box i {
   font-size: 32px;
-  color: #e03a3c;
+  color: #C8A2C8;
   border-radius: 50%;
   padding: 8px;
   border: 2px dotted #f8d4d5;
@@ -1315,7 +1267,7 @@ section {
 
 .contact .info-box h3 {
   font-size: 20px;
-  color: #777777;
+  color: #C8A2C8;
   font-weight: 700;
   margin: 10px 0;
 }
@@ -1336,7 +1288,7 @@ section {
 .contact .php-email-form .error-message {
   display: none;
   color: #fff;
-  background: #ed3c0d;
+  background: #C8A2C8;
   text-align: left;
   padding: 15px;
   font-weight: 600;
@@ -1398,12 +1350,13 @@ section {
 }
 
 .contact .php-email-form button[type="submit"] {
-  background: #e03a3c;
-  border: 0;
+  background: #800080;
+  border: 2px solid #800080;
   padding: 10px 32px;
-  color: #fff;
+  color:#fff;
   transition: 0.4s;
   border-radius: 4px;
+  display: inline-block;
 }
 
 .contact .php-email-form button[type="submit"]:hover {
@@ -1945,7 +1898,7 @@ section {
 
 #footer .footer-top {
   padding: 60px 0 30px 0;
-  background: #1b1b1b;
+  background: #C8A2C8;
 }
 
 #footer .footer-top .footer-contact {
