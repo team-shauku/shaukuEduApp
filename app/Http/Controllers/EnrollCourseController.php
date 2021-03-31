@@ -8,6 +8,6 @@ class EnrollCourseController extends Controller
 {
     //
     function index(){
-        return view('enroll_course');
+        return view('pages.enroll_course');
     }
 }

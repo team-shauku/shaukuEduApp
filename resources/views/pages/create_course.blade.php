@@ -22,7 +22,7 @@
 <body>
 
     <div class="container mt-5">
-        <form action="" method="post" enctype="multipart/form-data">
+        <form action="{{}}" method="post" enctype="multipart/form-data">
           <h3 class="text-center mb-5">Upload Course</h3>
             @csrf
             @if ($message = Session::get('success'))
