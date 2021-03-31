@@ -19,6 +19,7 @@ Route::get('/', function () {
 });
 
 Auth::routes();
+Route::get('create_user', [App\Http\Controllers\Auth\RegisterController::class, 'getUserDetails']);
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
@@ -29,5 +30,5 @@ Route::get('/create_course', [App\Http\Controllers\CourseController::class, 'ind
 Route::get('/upload-course', [App\Http\Controllers\CourseController::class, 'createForm']);
 
 Route::post('/upload-course', [App\Http\Controllers\CourseController::class, 'courseUpload'])->name('courseUpload');
-Route::get('/teacher', [App\Http\Controllers\TeacherController::class, 'index']);
-Route::get('/student', [App\Http\Controllers\StudentController::class, 'index']);
+Route::get('/teacher', [App\Http\Controllers\TeacherController::class, 'index'])->middleware('teacher');
+Route::get('/student', [App\Http\Controllers\StudentController::class, 'index'])->middleware('student');;

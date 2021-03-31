@@ -11,6 +11,10 @@ class TeacherController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
+    public function __construct()
+    {
+        $this->middleware(['auth', 'teacher']);
+    }
     public function index()
     {
         return view ('teacher');

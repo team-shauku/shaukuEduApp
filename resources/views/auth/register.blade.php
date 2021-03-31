@@ -60,6 +60,38 @@
                                 <input id="password-confirm" type="password" class="form-control" name="password_confirmation" required autocomplete="new-password">
                             </div>
                         </div>
+                        <div class="form-group row">
+                            <label for="course_category" class="col-md-4 col-form-label text-md-right">{{ __('Select Course category') }}</label>
+                            <div class="col-md-6">        
+                                <select name="course_category" class="form-control" id="input">
+                                    <option value="">  </option>
+                                    @foreach ($course_categories as $course_category)
+                                        <option value="{{ $course_category->id}}">{{$course_category->name}}</option>
+                                     @endforeach
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="course_level" class="col-md-4 col-form-label text-md-right">{{ __('Select Course category') }}</label>
+                            <div class="col-md-6">        
+                                <select name="course_level" class="form-control" id="input">
+                                    <option value="">  </option>
+                                    @foreach ($course_levels as $course_level)
+                                        <option value="{{$course_level->id}}">{{$course_level->name}}</option>
+                                     @endforeach
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="role" class="col-md-4 col-form-label text-md-right">{{ __('Select Course category') }}</label>
+                            <div class="col-md-6">        
+                                <select name="role" class="form-control" id="input">
+                                    <option value="teacher"> Teacher </option>
+                                    <option value="student"> Student </option>
+                                </select>
+                            </div>
+                        </div>
+
 
                         <div class="form-group row mb-0">
                             <div class="col-md-6 offset-md-4">

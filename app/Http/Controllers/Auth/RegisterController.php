@@ -5,6 +5,8 @@ namespace App\Http\Controllers\Auth;
 use App\Http\Controllers\Controller;
 use App\Providers\RouteServiceProvider;
 use App\Models\User;
+use App\Models\CourseCategory;
+use App\Models\CourseLevel;
 use Illuminate\Foundation\Auth\RegistersUsers;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
@@ -46,7 +48,17 @@ class RegisterController extends Controller
      *
      * @param  array  $data
      * @return \Illuminate\Contracts\Validation\Validator
+     * 
      */
+
+
+    public function getUserDetails(){
+        $course_levels = CourseLevel::get();
+        $course_categories = CourseCategory::get();
+        
+        // $reporting_line = ReportingLine::all();
+        return view('auth.register', compact('course_levels', 'course_categories'));   
+    }
     protected function validator(array $data)
     {
         return Validator::make($data, [
@@ -67,7 +79,11 @@ class RegisterController extends Controller
         return User::create([
             'name' => $data['name'],
             'email' => $data['email'],
+            'category_id' => $data['course_category'],
+            'level_id' => $data['course_level'],
+            'role' => $data['role'],
             'password' => Hash::make($data['password']),
         ]);
+        // dd($data);
     }
 }
