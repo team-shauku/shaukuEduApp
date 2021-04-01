@@ -68,7 +68,7 @@
         <div class="col-xl-6">
           <h1>Bringing Educators close to You</h1>
           <h2>We are team of students whose aim is to bring Education closer to home for Africans</h2>
-          <a href="{{ route('register') }}" class="btn-get-started scrollto">Get Started</a>
+          <a href="{{ route('registration') }}" class="btn-get-started scrollto">Get Started</a>
         </div>
       </div>
     </div>

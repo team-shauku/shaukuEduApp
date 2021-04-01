@@ -27,17 +27,13 @@ class LoginController extends Controller
      *
      * @var string
      */
-    protected $redirectTo = RouteServiceProvider::HOME;
+    // protected $redirectTo = RouteServiceProvider::HOME;
 
     /**
      * Create a new controller instance.
      *
      * @return void
      */
-    public function __construct()
-    {
-        $this->middleware('guest')->except('logout');
-    }
     public function redirectTo()
     {
         switch(Auth::user()->role){
@@ -46,7 +42,7 @@ class LoginController extends Controller
             return $this->redirectTo;
                 break;
             case 'student':
-                $this->redirectTo = '/steudent';
+                $this->redirectTo = '/student';
                 return $this->redirectTo;
                 break;
             default:
@@ -56,6 +52,11 @@ class LoginController extends Controller
          
         // return $next($request);
     } 
-    
+
+    public function __construct()
+    {
+        $this->middleware('guest')->except('logout');
+    }
+       
 }
 
