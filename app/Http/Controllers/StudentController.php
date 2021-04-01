@@ -3,6 +3,9 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\User;
+use App\Models\Course;
+use Illuminate\Support\Facades\Storage;
 
 class StudentController extends Controller
 {
@@ -13,7 +16,9 @@ class StudentController extends Controller
      */
     public function index()
     {
-        return view('student');
+     
+        $courses=Course::orderBy('created_at','desc')->take(5)->get();
+        return view('pages.student')->with('courses',$courses);
     }
 
     /**
@@ -56,7 +61,7 @@ class StudentController extends Controller
      */
     public function edit($id)
     {
-        //
+        // 
     }
 
     /**

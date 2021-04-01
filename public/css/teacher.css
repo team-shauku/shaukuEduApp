@@ -1,0 +1,26 @@
+body{
+   margin:0; 
+}
+
+.nav-left-sidebar {
+    background-color:purple;
+}
+
+.nav-left-sidebar .sidebar-light{
+    background-color:purple;
+}
+
+/* .menu-list{
+
+}
+
+.navbar .navbar-expand-lg .navbar-light{
+
+}
+
+.d-xl-none .d-lg-none{
+
+}
+.navbar-toggler{
+
+} */

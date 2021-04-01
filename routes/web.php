@@ -2,7 +2,9 @@
 // use Auth;php
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Auth;
-
+use App\Http\Controllers\StudentController;
+use App\Http\Controllers\TeacherController;
+use App\Http\Controllers\CourseController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -30,5 +32,16 @@ Route::get('/create_course', [App\Http\Controllers\CourseController::class, 'ind
 Route::get('/upload-course', [App\Http\Controllers\CourseController::class, 'createForm']);
 
 Route::post('/upload-course', [App\Http\Controllers\CourseController::class, 'courseUpload'])->name('courseUpload');
+
 Route::get('/teacher', [App\Http\Controllers\TeacherController::class, 'index'])->middleware('teacher');
 Route::get('/student', [App\Http\Controllers\StudentController::class, 'index'])->middleware('student');;
+=======
+Route::get('/teacher', [App\Http\Controllers\TeacherController::class, 'index'])->middleware('role:teacher');
+Route::get('/student', [App\Http\Controllers\StudentController::class, 'index'])->middleware('role:student');
+
+Route::get('/student/view_course', [CourseController::class, 'show']);
+
+// Route::resource('teacher',TeacherController::class);
+// Route::resource('student',StudentController::class);
+// Route::resource('course', CourseController::class);
+

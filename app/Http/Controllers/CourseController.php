@@ -20,7 +20,8 @@ class CourseController extends Controller
      */
     public function index()
     {
-        return view('create_courses'); 
+         
+        // return view('pages.create_course'); 
     }
 
     /**
@@ -28,12 +29,19 @@ class CourseController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
+    public function enrolledCourses($id){
+        // return courses student has enrolled in
+          // get student id from users
+        $id=auth()->users()->id;
+        $id=Course::find($id);
+        return view('pages.enrolled_courses')->with($course->id);
+    }
 
 
     
         public function createForm(){
             // dd(Auth::user()->id);
-          return view('create_course');
+          return view('pages.create_course');
         }
       
         public function CourseUpload(Request $req){
@@ -89,6 +97,8 @@ class CourseController extends Controller
     public function show($id)
     {
         //
+        $course=Course::find($id);
+        return view('pages.course_show')->with('course',$course);
     }
 
     /**
