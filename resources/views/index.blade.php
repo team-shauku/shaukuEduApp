@@ -68,7 +68,7 @@
         <div class="col-xl-6">
           <h1>Bringing Educators close to You</h1>
           <h2>We are team of students whose aim is to bring Education closer to home for Africans</h2>
-          <a href="{{ route('register') }}" class="btn-get-started scrollto">Get Started</a>
+          <a href="{{ route('registration') }}" class="btn-get-started scrollto">Get Started</a>
         </div>
       </div>
     </div>
@@ -94,10 +94,7 @@
                                 Students can enroll in courses they desire and with varous competency.
                                 Educators can add courses as promptly to meet a partcular need.
                                </p>
-              <a href="#" class="about-btn"><span>About us</span> <i class="bx bx-chevron-right"></i></a>
-            </div>
-          </div>
-          
+                 
               </div>
             </div><!-- End .content-->
           </div>
@@ -180,7 +177,7 @@
               <div class="member-img">
                 <img src="assets/img/team/team-1.png" class="img-fluid" alt="" width="500px" height="20px">
                 <div class="social">
-                  <a href=""><i class="bi bi-linkedin"></i></a>
+                  <a href=""><i class="bi bi-linkedin https://linkedin.com/in/japhletnwamu"></i></a>
                 </div>
               </div>
               <div class="member-info">
@@ -195,7 +192,7 @@
               <div class="member-img">
                 <img src="assets/img/team/team-2.jpg" class="img-fluid" alt="">
                 <div class="social">
-                  <a href=""><i class="bi bi-linkedin"></i></a>
+                  <a href=""><i class="bi bi-linkedin https://www.linkedin.com/in/delphine-nyaboke"></i></a>
                 </div>
               </div>
               <div class="member-info">
@@ -210,7 +207,7 @@
               <div class="member-img">
                 <img src="assets/img/team/team-3.jpg" class="img-fluid" alt="">
                 <div class="social">
-                  <a href=""><i class="bi bi-linkedin"></i></a>
+                  <a href=""><i class="bi bi-linkedin https://www.linkedin.com/in/larry-okubasu-84520b198 "></i></a>
                 </div>
               </div>
               <div class="member-info">
@@ -353,16 +350,7 @@
             </p>
           </div>
 
-          <div class="col-lg-2 col-md-6 footer-links">
-            <h4>Useful Links</h4>
-            <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">About us</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
-            </ul>
-          </div>
-
-      
+              
     <div class="container d-md-flex py-4">
 
       <div class="me-md-auto text-center text-md-start">
