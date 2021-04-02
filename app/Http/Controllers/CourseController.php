@@ -32,21 +32,21 @@ class CourseController extends Controller
     public function enrolledCourses($id){
         // return courses student has enrolled in
           // get student id from users
-        $id=auth()->users()->id;
+        $id=Auth::user()->id;
         $id=Course::find($id);
-        return view('pages.enrolled_courses')->with($course->id);
+        return view('pages.enrolled_courses');
     }
 
 
     
         public function createForm(){
             // dd(Auth::user()->id);
-          return view('pages.create_course');
+          return view('teacher.create_course');
         }
       
         public function CourseUpload(Request $req){
               $req->validate([
-              'file' => 'required|mimes:csv,txt,xlx,xls,pdf|max:2048'
+              'file' => 'required|mimes:csv,txt,mp4,jpg,png,doc,docs,xlx,xls,pdf|max:2048'
               ]);
       
               $fileModel = new Course;

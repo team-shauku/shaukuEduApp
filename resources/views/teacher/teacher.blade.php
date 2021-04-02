@@ -1,6 +1,6 @@
 @extends('layouts.new_app')
 @section('content')
-<div class="nav-left-sidebar sidebar-light" style="background-color:purple">
+<div class="nav-left-sidebar sidebar-light" style="background-color:rgba(240, 196, 240, 0.5)">
     <div class="menu-list">
         <nav class="navbar navbar-expand-lg navbar-light">
             <a class="d-xl-none d-lg-none" href="#">Dashboard</a>
@@ -54,17 +54,59 @@
                 </div>
                 <div class="ecommerce-widget">
                     <div class="row">
-                        <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12 col-12">
+                        <div class="col-xl-9 col-lg-9 col-md-9 col-sm-12 col-12">
                             <div class="card">
-                                <div class="card-body" style="background-color:#f38fda">
-                                    <h5 class="" style="color:#003765">Create New Course</h5>
+                                <div class="card-body">
+                                    <h5 class=""></h5>
                                     <div class="metric-value d-inline-block">
-                                        <a class="mb-1" href=""><img src="assets/img/addition.png" alt="" width="50px" height="40px"></a>
+                                        <a class="mb-1" href=""><img src="assets/img/teacher.png" alt="" width="100px" height="100%"></a>
                                     </div>
                                 </div>
                                 <div id="sparkline-revenue"></div>
                             </div>
                         </div>
+                        <div>
+                            
+                        <div class="ecommerce-widget">
+                            <div class="row">
+                                <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12 col-12">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <h5 class=""></h5>
+                                            <div class="metric-value d-inline-block">
+                                                <a class="mb-1" href="{{route('create_course')}}"><img src="assets/img/add.png" alt="" width="50px" height="60px"></a>
+                                            </div>
+                                        </div>
+                                        <div id="sparkline-revenue"></div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12 col-12">
+                                    <div class="card">
+                                        <div class="card-body" >
+                                            <h5 class="">Number of enrolled students</h5>
+                                            <div class="metric-value d-inline-block">
+                                                <h1 class="mb-1"></h1>
+                                                    
+                                            </div>
+                                            
+                                        </div>
+                                        <div id="sparkline-revenue2"></div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12 col-12">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <h5 class>Number of Courses created</h5>
+                                            <div class="metric-value d-inline-block">
+                                                <h1 class="mb-1">0</h1>
+                                            </div>
+                                           
+                                        </div>
+                                        <div id="sparkline-revenue3"></div>
+                                    </div>
+                                </div>
+                                
+                       
                 <!-- ============================================================== -->
                 <!-- end pageheader  -->
                 <!-- ============================================================== -->
