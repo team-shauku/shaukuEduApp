@@ -10,7 +10,7 @@
 --------------------------------------------------------------*/
 body {
   font-family: "Open Sans", sans-serif;
-  color: #444444;
+  color: #bb5dbb;
 }
 
 a {
@@ -1152,7 +1152,7 @@ section {
 }
 
 .faq .faq-list a.collapsed:hover {
-  color: #e03a3c;
+  color: #C8A2C8;
 }
 
 .faq .faq-list a.collapsed .icon-show {
@@ -1170,7 +1170,8 @@ section {
   margin-bottom: 20px;
   overflow: hidden;
   border-radius: 5px;
-  background: #fff;
+  color: #fff;
+
 }
 
 .team .member .member-img {
