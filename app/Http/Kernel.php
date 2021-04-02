@@ -65,7 +65,6 @@ class Kernel extends HttpKernel
 
         'teacher' => \App\Http\Middleware\Teacher::class,
         'student' => \App\Http\Middleware\Student::class,
-=======
-        'role' => \App\Http\Middleware\Role::cl
+        'role' => \App\Http\Middleware\Role::class,
     ];
 }
