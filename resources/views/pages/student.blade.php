@@ -1,8 +1,9 @@
 @extends('layouts.new_app')
 @section('content')
+
 <div class="nav-left-sidebar sidebar-light" style="background-color:slateblue">
     <ul>
-        <li><a href="/student/enrolled_courses">Your Courses</a></li>
+        <li><a href="{{route('show_courses', ['id'=>$student_id->id])}}">Your Courses</a></li>
     </ul>
     <div class="menu-list">
         <nav class="navbar navbar-expand-lg navbar-light">
@@ -58,6 +59,8 @@
                 <div class="ecommerce-widget">
                     {{--displaying available courses for student to enroll in --}}
                     <h1>Courses</h1>
+                    <h5>{{$student_id}}</h5>
+                    <h5>{{$student_id->id}}</h5>
                     @if(count($courses)>0)
                         @foreach($courses as $course)
                             <div class="row">

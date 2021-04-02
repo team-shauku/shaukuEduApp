@@ -9,6 +9,11 @@ use Illuminate\Support\Facades\Storage;
 
 class StudentController extends Controller
 {
+
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
     /**
      * Display a listing of the resource.
      *
@@ -17,8 +22,11 @@ class StudentController extends Controller
     public function index()
     {
      
+        // get student id
+        $student=auth()->user()->id;
+        $student_id=User::find($student);
         $courses=Course::orderBy('created_at','desc')->take(5)->get();
-        return view('pages.student')->with('courses',$courses);
+        return view('pages.student',compact('student_id','courses'));
     }
 
     /**
@@ -40,6 +48,7 @@ class StudentController extends Controller
     public function store(Request $request)
     {
         //
+        
     }
 
     /**
@@ -48,9 +57,12 @@ class StudentController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
+    public function show(User $id)
     {
-        //
+        // return view of courses enrolled by student
+        $student_id=User::find($id);
+        $message="Your registered courses will appear here";
+        return view('pages.enrolled_courses',compact('student_id','message'));
     }
 
     /**
