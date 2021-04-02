@@ -1,6 +1,10 @@
 @extends('layouts.new_app')
 @section('content')
-<div class="nav-left-sidebar sidebar-light" style="background-color:purple">
+
+<div class="nav-left-sidebar sidebar-light" style="background-color:slateblue">
+    <ul>
+        <li><a href="{{route('show_courses', ['id'=>$student_id->id])}}">Your Courses</a></li>
+    </ul>
     <div class="menu-list">
         <nav class="navbar navbar-expand-lg navbar-light">
             <a class="d-xl-none d-lg-none" href="#">Dashboard</a>
@@ -39,13 +43,13 @@
                 <div class="row">
                     <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
                         <div class="page-header">
-                            <h2 class="pageheader-title">Teacher's Dashboard</h2>
+                            <h2 class="pageheader-title">Student's Dashboard</h2>
 
                             <div class="page-breadcrumb">
                                 <nav aria-label="breadcrumb">
                                     <ol class="breadcrumb">
                                         <li class="breadcrumb-item"><a href="#" class="breadcrumb-link">Dashboard</a></li>
-                                        <li class="breadcrumb-item active" aria-current="page">Course Management </li>
+                                        <li class="breadcrumb-item active" aria-current="page">Course Management</li>
                                     </ol>
                                 </nav>
                             </div>
@@ -53,18 +57,34 @@
                     </div>
                 </div>
                 <div class="ecommerce-widget">
-                    <div class="row">
-                        <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12 col-12">
-                            <div class="card">
-                                <div class="card-body" style="background-color:#f38fda">
-                                    <h5 class="" style="color:#003765">Create New Course</h5>
-                                    <div class="metric-value d-inline-block">
-                                        <a class="mb-1" href=""><img src="assets/img/addition.png" alt="" width="50px" height="40px"></a>
+                    {{--displaying available courses for student to enroll in --}}
+                    <h1>Courses</h1>
+                    <h5>{{$student_id}}</h5>
+                    <h5>{{$student_id->id}}</h5>
+                    @if(count($courses)>0)
+                        @foreach($courses as $course)
+                            <div class="row">
+                                <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12 col-12">
+                                    <div class="card">
+                                        <div class="card-body" style="background-color:#00ffff">
+                                            <h5 class="" style="color:#003765"><a href="/student/show_course/{{$course->id}}"> Course Title: {{$course->name}}</a></h5>
+                                            <div class="metric-value d-inline-block">
+                                                <a class="mb-1" href=""><img src="assets/img/addition.png" alt="" width="50px" height="40px"></a>
+                                            </div>
+                                            <small>Course author: {{$course->teacher_id}}</small>
+                                        </div>
+                                        <div id="sparkline-revenue"></div>
                                     </div>
                                 </div>
-                                <div id="sparkline-revenue"></div>
                             </div>
-                        </div>
+                        @endforeach
+                        {{-- <div class="page-links">
+                            {if we use pagination)
+                            {{$posts->links()}}
+                            </div> --}}
+                    @else
+                            <p>No courses available</p>
+                    @endif
                 <!-- ============================================================== -->
                 <!-- end pageheader  -->
                 <!-- ============================================================== -->
@@ -146,7 +166,7 @@
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
-                         Copyright © SHauku. All rights reserved.
+                         Copyright © Shauku. All rights reserved.
                     </div>
 
                 </div>

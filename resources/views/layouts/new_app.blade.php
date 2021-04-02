@@ -7,7 +7,7 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <title>{{config('app.name', 'ShaukuEduApp')}}</title>
-
+    <script src="{{ asset('js/app.js') }}" defer></script>
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="assets/vendor/bootstrap/css/bootstrap.min.css">
@@ -43,10 +43,12 @@
     <script type="text/javascript" src="js/jquery-2.2.4.min.js"></script>
     <script type="text/javascript" src="js/jquery.printPage.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.js"></script>
+    
  
     </head>
 <body>
     <div id="app">
+        @include('include.navbar')
             {{-- @include('include.navbar')
             @include('include.message') --}}
         <div>

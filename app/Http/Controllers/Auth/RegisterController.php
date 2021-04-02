@@ -33,6 +33,24 @@ class RegisterController extends Controller
      * @var string
      */
     // protected $redirectTo = RouteServiceProvider::HOME;
+    public function redirectTo()
+    {
+        switch(Auth::user()->role){
+            case 'teacher':
+            $this->redirectTo = '/teacher';
+            return $this->redirectTo;
+                break;
+            case 'student':
+                $this->redirectTo = '/student';
+                return $this->redirectTo;
+                break;
+            default:
+                $this->redirectTo = '/login';
+                return $this->redirectTo;
+        }
+         
+        // return $next($request);
+    }
 
     /**
      * Create a new controller instance.
@@ -90,19 +108,4 @@ class RegisterController extends Controller
         // dd($data);
     }
 
-    public function redirectTo() {
-        $role = Auth::user()->role; 
-        switch ($role) {
-          case 'teacher':
-            return '/teacher';
-            break;
-          case 'student':
-            return '/student';
-            break; 
-      
-          default:
-            return '/home'; 
-          break;
-        }
-    }
 }

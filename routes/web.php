@@ -21,15 +21,14 @@ Route::get('/', function () {
 });
 
 Auth::routes();
+// Auth::routes(['register' => false]);
+Auth::routes(['home' => false]);
 Route::get('create_user', [App\Http\Controllers\Auth\RegisterController::class, 'getUserDetails'])->name('registration');
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+// Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
 
-
-Route::get('/create_course', [App\Http\Controllers\CourseController::class, 'index']);
-
-Route::get('/upload-course', [App\Http\Controllers\CourseController::class, 'createForm']);
+Route::get('/upload-course', [App\Http\Controllers\CourseController::class, 'createForm'])->name('create_course');
 
 Route::post('/upload-course', [App\Http\Controllers\CourseController::class, 'courseUpload'])->name('courseUpload');
 
