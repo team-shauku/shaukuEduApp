@@ -42,3 +42,6 @@ Route::get('/student/view_course', [CourseController::class, 'show']);
 
 
 Route::get('show_courses',[App\Http\Controllers\StudentController::class, 'show'])->name('show_courses');
+Route::get('view_course',[App\Http\Controllers\StudentController::class,'showCourse'])->name('view_course');
+
+Route::get('study_course',[App\Http\Controllers\StudentController::class, 'studyCourse'])->name('study_course');

@@ -52,7 +52,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="ecommerce-widget">
+                <div class="ecommerce-widget"></div>
                     <div class="row">
                         <div class="col-xl-9 col-lg-9 col-md-9 col-sm-12 col-12">
                             <div class="card">
@@ -65,9 +65,9 @@
                                 <div id="sparkline-revenue"></div>
                             </div>
                         </div>
-                        <div>
+                    <div>
                             
-                        <div class="ecommerce-widget">
+                        <div class="ecommerce-widget"></div>
                             <div class="row">
                                 <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12 col-12">
                                     <div class="card">

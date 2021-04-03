@@ -25,8 +25,13 @@ class StudentController extends Controller
         // get student id
         $student=auth()->user()->id;
         $student_id=User::find($student);
-        $courses=Course::orderBy('created_at','desc')->take(5)->get();
-        return view('pages.student',compact('student_id','courses'));
+        $category_id=$student_id->category_id;
+        $course_level=$student_id->level_id;
+        
+        // $course_id=$student->category_id;
+        // $courses=Course::where('category_id',$course_id)->orderBy('created_at','desc')->take(5)->get();
+        // return view('student.student',compact('student_id','courses'));
+        return view('student.student',compact('student_id'));
     }
 
     /**
@@ -47,7 +52,9 @@ class StudentController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        // enroll student for course
+
+        return redirect()->route('study_course')->with();
         
     }
 
@@ -62,7 +69,16 @@ class StudentController extends Controller
         // return view of courses enrolled by student
         $student_id=User::find($id);
         $message="Your registered courses will appear here";
-        return view('pages.enrolled_courses',compact('student_id','message'));
+        return view('student.enrolled_courses',compact('student_id','message'));
+    }
+
+    public function showCourse()
+    {
+        // Course $id
+        // View more details about course
+        // $course_id=User::find($id);
+        // return view('student.view_course', compact('course_id'));
+        return view('student.view_course');
     }
 
     /**
@@ -94,8 +110,14 @@ class StudentController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id)
+    public function destroy(Course $course)
     {
-        //
+        // $course->delete();
+        // return redirect()->route('show_courses')->with('success', 'Student deleted successfully');
+    }
+
+    public function studyCourse(Course $course)
+    {
+        return view('student.study_course');
     }
 }
