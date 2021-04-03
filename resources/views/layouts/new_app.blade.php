@@ -52,7 +52,8 @@
             {{-- <div id=""></div> --}}
             @yield('content')
             @yield('scripts')
-      
-    </div>
+
+
+ 
 </body>
 </html>

@@ -29,26 +29,27 @@
                 <div class="page-breadcrumb">
                     <nav aria-label="breadcrumb">
                         <ol class="breadcrumb">
-                            <li class="breadcrumb-item"><a href="#" class="breadcrumb-link">Dashboard</a></li>
+                            <li class="breadcrumb-item"><a href="{{route('/student')}}" class="breadcrumb-link">Dashboard</a></li>
                             <li class="breadcrumb-item " >Course Management</li>
                             <li class="breadcrumb-item active" aria-current="page">Course Details</li>
                         </ol>
                     </nav>
+                    </div>
                 </div>
             </div>
-        </div>
 
                
                     {{--displaying available courses for student to enroll in --}}
                    
                 <div class="ecommerce-widget">
                     
-                  
+                  <div >
                     <figure class="figure">
                         <div>
                             <img src="assets/img/student.png" class="figure-img img-fluid rounded" alt="A generic square placeholder image with rounded corners in a figure.">
                         </div>
                     </figure>
+                </div>
                         <div>
                             <h2>Course Details</h2>
                             {{-- underline --}}
@@ -64,11 +65,11 @@
                     </div>
                       
             
-                        </div>
+             </div>
        
         
             
-        </div>
+       
         
   
 
@@ -76,18 +77,7 @@
         <!-- ============================================================== -->
         <!-- footer -->
         <!-- ============================================================== -->
-        <div class="footer">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
-                         Copyright © Shauku. All rights reserved.
-                    </div>
-
-                </div>
-            </div>
-        </div>
-    </div>
-
+ 
 @endsection
 
 

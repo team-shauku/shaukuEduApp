@@ -42,6 +42,9 @@
                     <h1>Courses</h1>
                     <h5>{{$student_id}}</h5>
                     <h5>{{$student_id->id}}</h5>
+                    <h5>{{$courses}}</h5>
+                    <h5>{{$course_levels}}</h5>
+                    <h5>{{$course_categories}}</h5>
                 <div class="ecommerce-widget">
                     {{-- @if(count($courses)>0)
                         @foreach($courses as $course)
@@ -66,23 +69,23 @@
                             </div> --}}
                     {{-- @else
                             <p>No courses available</p>
-                    @endif --}}
-
-            
-                        </div>
+                    @endif --}}  
+                </div>
         <div class="ecommerce-widget">
-        
+        {{-- @foreach($courses as $course)
             <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12 col-12">
                 <div class="card" style="width: 18rem;">
                     <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="{{route('view_course')}}" class="card-link">Card link</a>
+                    <h5 class="card-title">{{$course_categories->name}}</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">{{$course->name}}</h6>
+                    <p class="card-text">{{$course_categories->description}}</p>
+                    <a href="{{route('view_course', $course->id)}}" class="card-link">View Course</a>
                     <a href="#" class="card-link">Another link</a>
                     </div>
                 </div>
             </div>
+            @endforeach --}}
+
           <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12 col-12">
             <div class="card" style="width: 18rem;">
                 <div class="card-body">
@@ -106,25 +109,17 @@
                     </div>
                     </div>
                 </div>
+            </div>
 
         </div>
-        
+    </div> 
   
 
             
         <!-- ============================================================== -->
         <!-- footer -->
-        <!-- ============================================================== -->
-        <div class="footer">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
-                         Copyright © Shauku. All rights reserved.
-                    </div>
-
-                </div>
-            </div>
-        </div>
-    </div>
+         <!-- ============================================================== -->
+       
+    
 
 @endsection
