@@ -7,6 +7,7 @@ use App\Providers\RouteServiceProvider;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Foundation\Auth\AuthenticatesUsers;
 
+
 class LoginController extends Controller
 {
     /*
@@ -30,30 +31,29 @@ class LoginController extends Controller
 
     // protected $redirectTo = RouteServiceProvider::HOME;
 
+    public function redirectTo() {
+        $role = Auth::user()->role; 
+        switch ($role) {
+          case 'teacher':
+            return '/teacher';
+            break;
+          case 'student':
+            return '/student';
+            break; 
+      
+          default:
+            return '/index'; 
+          break;
+        }
+    }
+
 
     /**
      * Create a new controller instance.
      *
      * @return void
      */
-    public function redirectTo()
-    {
-        switch(Auth::user()->role){
-            case 'teacher':
-            $this->redirectTo = '/teacher';
-            return $this->redirectTo;
-                break;
-            case 'student':
-                $this->redirectTo = '/student';
-                return $this->redirectTo;
-                break;
-            default:
-                $this->redirectTo = '/login';
-                return $this->redirectTo;
-        }
-         
-        // return $next($request);
-    } 
+  
 
     public function __construct()
     {

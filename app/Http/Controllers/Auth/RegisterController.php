@@ -107,4 +107,5 @@ class RegisterController extends Controller
         ]);
         // dd($data);
     }
+
 }
