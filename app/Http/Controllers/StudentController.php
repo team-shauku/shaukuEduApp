@@ -18,7 +18,7 @@ class StudentController extends Controller
     {
      
         $courses=Course::orderBy('created_at','desc')->take(5)->get();
-        return view('pages.student')->with('courses',$courses);
+        return view('student.student')->with('courses',$courses);
     }
 
     /**
