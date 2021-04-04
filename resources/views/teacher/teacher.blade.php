@@ -114,71 +114,7 @@
 
                         <!-- ============================================================== -->
 
-                                      <!-- recent orders  -->
-                        <!-- ============================================================== -->
-                        {{-- <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
-                            <div class="card">
-                                <h5 class="card-header text-center">Requisition Approval Board</h5>
-                                <div class="card-body p-0">
-                                    <div class="table-responsive">
-                                        <table class="table">
-                                            <thead class="bg-light">
-                                                <tr class="border-0"> --}}
-                                                    {{-- <th class="border-0">#</th> --}}
-                                                    {{-- <th class="border-0">Requestor Name</th>
-                                                    <th class="border-0">Category</th>
-                                                    <th class="border-0">Item</th>
-                                                    <th class="border-0">Quantity</th>
-                                                    <th class="border-0">Description</th>
-                                                    <th class="border-0">Status</th>
-                                                    <th class="border-0" colspan="2">Approval/Rejection</th> --}}
-                                                    {{-- <th class="border-0">Delete</th> --}}
-                                                {{-- </tr>
-                                            </thead>
-                                            <tbody> --}}
-                                                {{-- {{dd($results->user->email)}} --}}
-                                                {{-- @if (count($results)>0)
-                                                    @foreach ($results as $result)
-                                                    @if((Auth::user()->designation_id == 4) && ($result->is_manager_approved == 1)) --}}
-                                                       {{-- @if(($result->user->reporting_line1_id == Auth::user()->designation_type_id) ||
-                                                        (Auth::user()->designation_id == 3 && $result->is_shth_approved == 1) || --}}
-                                                         
-                                                         {{-- $result->user->reporting_line1_id == Auth::user()->designation_type_i --}}
-                                                         {{-- && $result->user->reporting_line1_id == Auth::user()->designation_type_id --}}
-                                                                                                    
-                                                    {{-- <tr>
-                                                        <td>{{$result->user->name}}</td>
-                                                        <td>{{$result->category->name }}</td>
-                                                        <td>{{$result->item->name}}</td>
-                                                        <td>{{$result->quantity}}</td>
-                                                        <td>{{$result->description}}</td> --}}
-                                                       
-                                                        {{-- <td>{{$result->created_at}}</td> --}}
-                                                        {{-- <td>{{ $result->status->name }}</td>
-                                                        <td><button style="background-color: #0077ad"> <a href="{{route('approve_requisition', $result->id)}}">Accept</a></button></td>
-                                                        <td><button style="background-color: red"> <a href="{{route('reject_requisition', $result->id)}}">Reject</button></td> --}}
-                                                        {{-- {{$result->}} --}}
-                                                        {{-- {{$result->user_id}} --}}
-                                                        {{-- {{Auth::user()->id}} --}}
-                      
-                                                {{-- </tr> --}}
-                                                {{-- {{Auth::user()->id}} --}}
-                      
-                                                {{-- @endif
-                                                    @endforeach
-                                                    
-                                                @endif
-
-                                            </tbody>
-                                        </table>
-                                    </div>
-                                </div>
-                            </div>
-                        </div> --}}
-                        
-                        <!-- ============================================================== -->
-                        <!-- end recent orders  -->
-
+                           
 
 
         <!-- ============================================================== -->
@@ -188,7 +124,7 @@
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
-                         Copyright © SHauku. All rights reserved.
+                         Copyright © Shauku. All rights reserved.
                     </div>
 
                 </div>

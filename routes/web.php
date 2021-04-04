@@ -38,7 +38,7 @@ Route::get('/student', [App\Http\Controllers\StudentController::class, 'index'])
 Route::get('/teacher', [App\Http\Controllers\TeacherController::class, 'index'])->middleware('role:teacher');
 Route::get('/student', [App\Http\Controllers\StudentController::class, 'index'])->middleware('role:student');
 
-Route::get('/student/view_course', [CourseController::class, 'show']);
+// Route::get('/student/view_course', [CourseController::class, 'show']);
 
 
 Route::get('show_courses',[App\Http\Controllers\StudentController::class, 'show'])->name('show_courses');

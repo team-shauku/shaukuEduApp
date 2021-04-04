@@ -46,33 +46,9 @@
                     <h5>{{$course_levels}}</h5>
                     <h5>{{$course_categories}}</h5>
                 <div class="ecommerce-widget">
-                    {{-- @if(count($courses)>0)
-                        @foreach($courses as $course)
-                            <div class="row">
-                                <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12 col-12">
-                                    <div class="card">
-                                        <div class="card-body" style="background-color:#00ffff">
-                                            <h5 class="" style="color:#003765"><a href="/student/show_course/{{$course->id}}"> Course Title: {{$course->name}}</a></h5>
-                                            <div class="metric-value d-inline-block">
-                                                <a class="mb-1" href=""><img src="assets/img/addition.png" alt="" width="50px" height="40px"></a>
-                                            </div>
-                                            <small>Course author: {{$course->teacher_id}}</small>
-                                        </div>
-                                        <div id="sparkline-revenue"></div>
-                                    </div>
-                                </div>
-                            </div>
-                        @endforeach --}}
-                        {{-- <div class="page-links">
-                            {if we use pagination)
-                            {{$posts->links()}}
-                            </div> --}}
-                    {{-- @else
-                            <p>No courses available</p>
-                    @endif --}}  
                 </div>
         <div class="ecommerce-widget">
-        {{-- @foreach($courses as $course)
+        <!-- {{-- @foreach($courses as $course)
             <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12 col-12">
                 <div class="card" style="width: 18rem;">
                     <div class="card-body">
@@ -84,32 +60,50 @@
                     </div>
                 </div>
             </div>
-            @endforeach --}}
+            @endforeach --}} -->
 
-          <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12 col-12">
-            <div class="card" style="width: 18rem;">
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="#" class="card-link">Card link</a>
-                    <a href="#" class="card-link">Another link</a>
-                </div>
-                </div>
-            </div>
+            <div class="ecommerce-widget"></div>
+                    <div class="row">
+                        <div class="col-xl-9 col-lg-9 col-md-9 col-sm-12 col-12">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class=""></h5>
+                                    <div class="metric-value d-inline-block">
+                                        <a class="mb-1" href=""><img src="assets/img/student.png" alt="" width="100px" height="100%"></a>
+                                    </div>
+                                </div>
+                                <div id="sparkline-revenue"></div>
+                            </div>
+                        </div>
+                    <div>
 
-            <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12 col-12">
-                <div class="card" style="width: 18rem;">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="#" class="card-link">Card link</a>
-                        <a href="#" class="card-link">Another link</a>
-                    </div>
-                    </div>
-                </div>
-            </div>
+            <div class="ecommerce-widget"></div>
+                            <div class="row">
+                                <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12 col-12">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <h5 class=""></h5>
+                                            <div class="metric-value d-inline-block">
+                                                <a class="mb-1" href="{{route('enroll_course')}}"><img src="assets/img/enroll.png" alt="" width="50px" height="60px"></a>
+                                            </div>
+                                        </div>
+                                        <div id="sparkline-revenue"></div>
+                                    </div>
+                                </div>
+
+                                <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12 col-12">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <h5 class>Number of Courses enrolled</h5>
+                                            <div class="metric-value d-inline-block">
+                                                <h1 class="mb-1">0</h1>
+                                            </div>
+                                           
+                                        </div>
+                                        <div id="sparkline-revenue3"></div>
+                                    </div>
+                                </div>
+                                                    
 
         </div>
     </div> 
