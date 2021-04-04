@@ -84,7 +84,7 @@
                                         <div class="card-body">
                                             <h5 class=""></h5>
                                             <div class="metric-value d-inline-block">
-                                                <a class="mb-1" href="{{route('enroll_course')}}"><img src="assets/img/enroll.png" alt="" width="50px" height="60px"></a>
+                                                <a class="mb-1" href=""><img src="assets/img/enroll.png" alt="" width="50px" height="60px"></a>
                                             </div>
                                         </div>
                                         <div id="sparkline-revenue"></div>
