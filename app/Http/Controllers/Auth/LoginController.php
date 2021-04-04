@@ -42,7 +42,7 @@ class LoginController extends Controller
             break; 
       
           default:
-            return '/index'; 
+            return '/'; 
           break;
         }
     }

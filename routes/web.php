@@ -32,8 +32,8 @@ Route::get('/upload-course', [App\Http\Controllers\CourseController::class, 'cre
 
 Route::post('/upload-course', [App\Http\Controllers\CourseController::class, 'courseUpload'])->name('courseUpload');
 
-Route::get('/teacher', [App\Http\Controllers\TeacherController::class, 'index'])->middleware('teacher');
-Route::get('/student', [App\Http\Controllers\StudentController::class, 'index'])->middleware('student');
+// Route::get('/teacher', [App\Http\Controllers\TeacherController::class, 'index'])->middleware('teacher');
+// Route::get('/student', [App\Http\Controllers\StudentController::class, 'index'])->middleware('student');
 
 Route::get('/teacher', [App\Http\Controllers\TeacherController::class, 'index'])->middleware('role:teacher');
 Route::get('/student', [App\Http\Controllers\StudentController::class, 'index'])->middleware('role:student');
