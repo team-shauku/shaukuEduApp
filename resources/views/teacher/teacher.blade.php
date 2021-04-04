@@ -10,7 +10,7 @@
             {{-- <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav flex-column">
                     <li class="nav-divider">
-                        <h3 style="color: wheat">Menu</h3>
+                        <h3 style="color: #800080;">Menu</h3>
                     </li>
                     <li class="nav-item ">
                         <a class="nav-link active" href="#" data-toggle="collapse" aria-expanded="false" data-target="#submenu-1" aria-controls="submenu-1"><i class="fa fa-fw fa-user-circle"></i>Dashboard</a>
