@@ -17,7 +17,7 @@
         .why-us .content {
     margin-top: 50px;
     padding: 30px;
-    background: #810c68;
+    background: #bb5dbb;
     border-radius: 4px;
     color: #fff;
     /* margin-bottom: 100px; */
